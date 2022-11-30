@@ -1,46 +1,28 @@
-# Astro Starter Kit: Minimal
+# No Fuss Astro Template 🚀
 
-```
-npm create astro@latest -- --template minimal
-```
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/lancerossdev/astro-basic-blog)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Flancerossdev%2Fno-fuss-astro)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/minimal)
+Hey there, this is going to be my second Astro template to showcase. As the title said, it's an Astro template without any complex designing.
+This blog template is made with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com) for the Front-end.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+You can [create an Issue](https://github.com/lancerossdev/no-fuss-astro/issues/new) or submit a Pull Request if you think there's something wrong or you want to add a new feature on this blog template. I will appreciate your help!
 
-## 🚀 Project Structure
+![Template Preview](https://user-images.githubusercontent.com/102563271/204714426-c2427c94-cd08-4796-bb6e-18a11c3617c8.png)
 
-Inside of your Astro project, you'll see the following folders and files:
 
-```
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Dev Notes 📝
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+You can use `npm i` or `yarn` to install dependencies. I personally use `pnpm` because it's what I use on most of my projects.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+`pnpm install` - Installs dependencies. You can use any of those.
 
-Any static assets, like images, can be placed in the `public/` directory.
+`pnpm dev` - Starts local dev server at `localhost:3000`
 
-## 🧞 Commands
+`pnpm build` - Build your production site to `./dist/`
 
-All commands are run from the root of the project, from a terminal:
+`pnpm preview` - Preview your build locally, before deploying
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
+## License ⚖️
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+This repository has [MIT License](https://github.com/lancerossdev/no-fuss-astro/blob/main/LICENSE).
