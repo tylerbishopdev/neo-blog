@@ -15,11 +15,6 @@ export default defineConfig({
       theme: "dracula",
     },
   },
-  vite: {
-    ssr: {
-      external: ["svgo"],
-    },
-  },
   integrations: [
     compress({
       css: true,
