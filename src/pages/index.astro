@@ -1,0 +1,43 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Footer from "@components/Footer.astro";
+import { Icon } from "astro-icon";
+---
+
+<Layout>
+  <section class="grid py-10 place-items-center text-center">
+    <h1 class="text-4xl mb-5">No Fuss Astro Template</h1>
+    <p class="">An Astro Template for blog, docs or landing page without complicated design and setup.</p>
+  </section>
+  <section class="py-14 sm:flex sm:items-center sm:justify-evenly text-center sm:text-left">
+      
+    <Icon name="uil:rocket" class="overflow-hidden inline-flex sm:m-8 w-28 h-28" />
+    <header class="mt-8 max-w-lg sm:my-0 mx-auto sm:mx-0">
+      <h1 class="mb-4 text-4xl tracking-normal dark:text-white">Blazingly Fast</h1>
+      <p class="max-w-10 font-normal leading-7 dark:text-zinc-300 sm:max-w-sm md:max-w-xl">
+        The reason why I chose Astro is because it's blazingly fast. It's also a component-based framework, so you can easily reuse your components.
+      </p>
+    </header>
+  </section>
+  <section class="py-14 sm:flex sm:items-center sm:justify-evenly text-center sm:text-left">
+      
+    <Icon name="ph:code-bold" class="overflow-hidden inline-flex sm:m-8 w-28 h-28 sm:order-last" />
+    <header class="mt-8 max-w-lg sm:my-0 mx-auto sm:mx-0">
+      <h1 class="mb-4 text-4xl tracking-normal dark:text-white">Easy to use</h1>
+      <p class="max-w-10 font-normal leading-7 dark:text-zinc-300 sm:max-w-sm md:max-w-xl">
+        Need to use this template? Just clone it and start writing your content. No complicated setup, no complicated design.
+      </p>
+    </header>
+  </section>
+  <section class="py-14 sm:flex sm:items-center sm:justify-evenly text-center sm:text-left">
+      
+    <Icon name="charm:plant-pot" class="overflow-hidden inline-flex sm:m-8 w-28 h-28 " />
+    <header class="mt-8 max-w-lg sm:my-0 mx-auto sm:mx-0">
+      <h1 class="mb-4 text-4xl tracking-normal dark:text-white">Free and Open Source</h1>
+      <p class="max-w-10 font-normal leading-7 dark:text-zinc-300 sm:max-w-sm md:max-w-xl">
+        Found some issues or want to contribute? Feel free to open an issue or pull request on <a href="https://github.com/lancerossdev/no-fuss-astro" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">GitHub</a>.
+      </p>
+    </header>
+  </section>
+  <Footer />
+</Layout>
