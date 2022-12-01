@@ -1,6 +1,7 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Footer from "@components/Footer.astro";
+import Counter from "@components/Counter.astro";
 import { Icon } from "astro-icon";
 ---
 
@@ -38,6 +39,9 @@ import { Icon } from "astro-icon";
         Found some issues or want to contribute? Feel free to open an issue or pull request on <a href="https://github.com/lancerossdev/no-fuss-astro" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">GitHub</a>.
       </p>
     </header>
+  </section>
+  <section class="py-20 sm:flex sm:items-center sm:justify-evenly text-center sm:text-left">
+    <Counter />
   </section>
   <Footer />
 </Layout>
