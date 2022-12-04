@@ -1,17 +1,13 @@
 ---
+export interface Props {
+  number: number;
+  label: string;
+}
+
+const { number, label } = Astro.props;
 ---
 
-<div class="grid sm:grid-cols-3 gap-16">
-  <div class="text-center">
-    <h1 class="text-5xl mb-3">12K+</h1>
-    <p>Lorem Ipsum</p>
-  </div>
-  <div class="text-center">
-    <h1 class="text-5xl mb-3">2.6K+</h1>
-    <p>Dolor Sit Amet</p>
-  </div>
-  <div class="text-center">
-    <h1 class="text-5xl mb-3">23+</h1>
-    <p>Quick Brown Fox</p>
-  </div>
-</div>
+<li class="text-center">
+  <h1 class="text-5xl mb-3">{number}</h1>
+  <p>{label}</p>
+</li>
