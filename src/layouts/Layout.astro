@@ -72,26 +72,7 @@ const classBody =
       }
       document.documentElement.className = theme;
     </script>
-    <script>
-      const themeBtn = document.querySelector(".theme-toggle");
-      const htmlClassList = document.documentElement.classList;
-      themeBtn.addEventListener("click", function () {
-        if (htmlClassList.contains("dark")) {
-          localStorage.setItem("theme", "light");
-          htmlClassList.remove("dark");
-        } else {
-          localStorage.setItem("theme", "dark");
-          htmlClassList.add("dark");
-        }
-      });
-    </script>
-    <script>
-      const navBtn = document.querySelector(".nav-toggle");
-      const navMenu = document.querySelector(".nav-menu");
-      navBtn.addEventListener("click", function () {
-        navMenu.classList.toggle("hidden");
-      });
-    </script>
+    <script src="@scripts/main.js"></script>
   </head>
   <body class={classBody}>
     <Header />
