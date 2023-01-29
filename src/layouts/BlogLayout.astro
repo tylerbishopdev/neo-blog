@@ -2,6 +2,8 @@
 import Header from "@components/Header.astro";
 import ThemeToggle from "@components/ThemeToggle.astro";
 import "@fontsource/inter/variable.css";
+import "@fontsource/fira-code/variable.css";
+
 
 let { pubDate } = Astro.props.content;
 const { frontmatter } = Astro.props;
@@ -101,11 +103,11 @@ const classBody =
   </head>
   <body class={classBody}>
     <Header />
-    <main class="m-auto p-6 max-w-4xl md:p-8">
+    <main class="mx-auto max-w-4xl md:px-20 p-8">
       <h1 class="sm:text-4xl text-3xl font-bold my-5">{frontmatter.title}</h1>
-      <p class="dark:text-zinc-300 text-zinc-700 text-lg">{pubDate}</p>
+      <p class="dark:text-zinc-300 text-zinc-700 text-base">{pubDate}</p>
       <section
-        class="prose prose-xl dark:text-slate-200 prose-a:dark:text-blue-400 prose-a:no-underline prose-pre:scrollbar-thin prose-pre:scrollbar-thumb-zinc-400 prose-pre:scrollbar-track-zinc-300 prose-pre:dark:scrollbar-thumb-zinc-500 prose-pre:dark:scrollbar-track-zinc-700 hover:prose-a:underline prose-a:text-blue-700 dark:prose-invert prose-a:underline-offset-2"
+        class="prose sm:prose-lg dark:text-slate-200 prose-a:dark:text-blue-400 prose-a:no-underline prose-pre:scrollbar-thin prose-pre:scrollbar-thumb-zinc-400 prose-pre:scrollbar-track-zinc-300 prose-pre:dark:scrollbar-thumb-zinc-500 prose-pre:dark:scrollbar-track-zinc-700 hover:prose-a:underline prose-a:text-blue-700 dark:prose-invert prose-a:underline-offset-2"
       >
         <article>
           <slot />

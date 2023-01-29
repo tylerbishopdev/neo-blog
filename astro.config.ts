@@ -5,15 +5,26 @@ import tailwind from "@astrojs/tailwind";
 import mdx from "@astrojs/mdx";
 import image from "@astrojs/image";
 import astroLayouts from "astro-layouts";
+import codeTitle from "remark-code-title";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://nofuss.lanceross.xyz",
+  site: "https://nofuss.pages.dev",
   base: "/",
   markdown: {
     shikiConfig: {
-      theme: "dracula",
+      theme: "slack-dark",
     },
+    remarkPlugins: [
+      [
+        astroLayouts,
+        {
+          default: "@layouts/Layout.astro",
+          "pages/blog/**/*.mdx": "@layouts/BlogLayout.astro",
+        },
+      ],
+      codeTitle,
+    ],
   },
   integrations: [
     compress({
@@ -26,17 +37,7 @@ export default defineConfig({
     }),
     tailwind(),
     sitemap(),
-    mdx({
-      remarkPlugins: [
-        [
-          astroLayouts,
-          {
-            default: "@layouts/Layout.astro",
-            "pages/blog/**/*.mdx": "@layouts/BlogLayout.astro",
-          },
-        ],
-      ],
-    }),
+    mdx(),
     image({
       serviceEntryPoint: "@astrojs/image/sharp",
     }),
