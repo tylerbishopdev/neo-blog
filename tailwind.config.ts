@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   darkMode: "class",
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,ts,tsx,vue}"],
@@ -31,14 +33,11 @@ module.exports = {
                 color: "black",
               },
             },
-            "h1, h2, h3, h4": {
-              fontWeight: "300",
-            },
           },
         },
       },
       fontFamily: {
-        inter: "Inter, Arial, sans-serif",
+        sans: ["InterVariable", "Inter", ...defaultTheme.fontFamily.sans],
       },
       gridTemplateColumns: {
         1: "repeat(auto-fit, minmax(24ch, 1fr));",
