@@ -2,7 +2,7 @@ export const homepage = [
   {
     title: "Blazingly Fast",
     content: "The reason why I chose Astro is because it's blazingly fast. It's also a component-based framework, so you can easily reuse your components.",
-    icon: "tabler:rocket",
+    icon: "charm:rocket",
   },
   {
     title: "Easy to use",
