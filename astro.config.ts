@@ -11,11 +11,6 @@ import codeTitle from "remark-code-title";
 export default defineConfig({
   site: "https://nofuss.pages.dev",
   base: "/",
-  vite: {
-    ssr: {
-      external: ["svgo"],
-    },
-  },
   markdown: {
     shikiConfig: {
       theme: "slack-dark",
